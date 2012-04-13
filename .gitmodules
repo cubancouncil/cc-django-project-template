@@ -1,3 +1,0 @@
-[submodule "migrations-stuff"]
-	path = migrations-stuff
-	url = git@github.com:cubancouncil/migrations.git
