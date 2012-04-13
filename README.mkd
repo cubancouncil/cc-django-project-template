@@ -1,0 +1,9 @@
+CUBAN COUNCIL - DJANGO PROJECT TEMPLATE
+=============
+
+Requires Django 1.4
+
+Usage
+-------------
+
+    django-admin.py startproject projectname --template=/path/to/cc-django-project-template
