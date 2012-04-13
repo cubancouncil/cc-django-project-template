@@ -1,0 +1,3 @@
+[submodule "project_name/media"]
+	path = project_name/media
+	url = git@github.com:cubancouncil/cc-launchpad.git
