@@ -1,4 +1,4 @@
-CUBAN COUNCIL - DJANGO PROJECT TEMPLATE
+Cuban Council - Django Project Template
 =============
 
 Requires Django 1.4
@@ -6,4 +6,14 @@ Requires Django 1.4
 Usage
 -------------
 
+Start a Django project using the template from a URL:
+
+    django-admin.py startproject projectname --template=https://github.com/cubancouncil/cc-django-project-template/zipball/master
+
+... or, if you have it checked out locally:
+
     django-admin.py startproject projectname --template=/path/to/cc-django-project-template
+
+## Authors ##
+* Chris Forrette / $horty
+* Mike Buzzard
