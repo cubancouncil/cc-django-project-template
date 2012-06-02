@@ -48,12 +48,15 @@ USE_L10N = False
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
 
+# Base project directory
+PROJECT_BASE = os.path.abspath(os.path.dirname(__file__))
+
 # Base media directory
-MEDIA_BASE = os.path.join(MEDIA_BASE, 'uploads/')
+MEDIA_BASE = os.path.join(PROJECT_BASE, 'media/')
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), 'media', 'uploads/').replace('\\', '/'))
+MEDIA_ROOT = os.path.join(MEDIA_BASE, 'uploads/')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -115,7 +118,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(os.path.dirname(__file__), 'templates').replace('\\', '/'),
+    os.path.join(PROJECT_BASE, 'templates').replace('\\', '/'),
 )
 
 INSTALLED_APPS = (
